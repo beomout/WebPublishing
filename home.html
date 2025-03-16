@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>범아웃</title>
+    <title>관리자 화면</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>hello, my world</p>
+    <div class="lnb">
+        <button id="toggleLNB">&lt;&lt;</button>
+        <ul id="lnbMenuList">
+            </ul>
+    </div>
+
+    <div class="main">
+        <div class="gnb">
+            <a href="#" data-lnb="AMENU" class="active">AMENU</a>
+            <a href="#" data-lnb="BMENU">BMENU</a>
+            <a href="#" data-lnb="CMENU">CMENU</a>
+            <a href="#" data-lnb="DMENU">DMENU</a>
+            <a href="#" data-lnb="EMENU">EMENU</a>
+        </div>
+        <div class="content">
+            <h1>AMENU 콘텐츠 영역</h1>
+            <p>AMENU 관련 콘텐츠가 표시됩니다.</p>
+        </div>
+    </div>
+    <script src = "script.js"></script>
 </body>
 </html>

@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.lnb {
+    width: 200px;
+    padding: 20px 0px;
+    transition: width 0.3s ease;
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.lnb.collapsed {
+    width: 30px;
+}
+
+.lnb.collapsed span {
+    display: none;
+}
+
+.lnb ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lnb li {
+    margin-bottom: 10px;
+}
+
+.lnb a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
+.lnb a.active {
+    color: #007bff; /* 포인트 컬러 */
+    font-weight: bold;
+}
+
+.gnb {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.gnb a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px; /* 메뉴 간 간격 */
+    padding: 5px;
+}
+
+.content {
+    padding: 20px;
+}
+
+#toggleLNB {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
