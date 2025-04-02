@@ -1,70 +1,47 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
+    font-family: 'malgungothic';
 }
-
 .lnb {
     width: 200px;
-    padding: 20px 0px;
-    transition: width 0.3s ease;
-    border-right: 1px solid #ddd;
-    overflow: hidden;
-    box-sizing: border-box;
+    background: #f4f4f4;
+    padding: 10px;
+    transition: width 0.3s;
 }
-
-.lnb.collapsed {
-    width: 30px;
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-
-.lnb.collapsed span {
-    display: none;
+.content-section {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+.content-section h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
 .lnb ul {
     list-style: none;
     padding: 0;
 }
-
-.lnb li {
-    margin-bottom: 10px;
-}
-
 .lnb a {
-    text-decoration: none;
-    color: #333;
     display: block;
     padding: 10px;
-}
-
-.lnb a.active {
-    color: #007bff; /* 포인트 컬러 */
-    font-weight: bold;
-}
-
-.gnb {
-    flex: 1;
-    padding: 10px;
-    display: flex;
-    justify-content: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.gnb a {
     text-decoration: none;
     color: #333;
-    margin: 0 15px; /* 메뉴 간 간격 */
-    padding: 5px;
 }
 
-.content {
-    padding: 20px;
+.lnb b {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
 }
 
-#toggleLNB {
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
-    cursor: pointer;
-}
