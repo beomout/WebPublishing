@@ -4,6 +4,7 @@ body {
 }
 .lnb {
     width: 200px;
+    height: 1000px;
     background: #f4f4f4;
     padding: 10px;
     transition: width 0.3s;
@@ -17,19 +18,31 @@ body {
 }
 .content-section {
     background: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    margin: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .content-section h2 {
-    margin: 0 0 10px;
+    display: block;
+    min-width: 400px;
+    margin: 0 0 14px;
     font-size: 18px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
+    font-weight: 900;
+    border-bottom: 2px solid #000 ;
+    padding-bottom: 16px;
 }
+
+.content-section ul {
+    list-style: none;
+    line-height: 160%;
+    padding-inline-start: 0;
+}
+
 .lnb ul {
     list-style: none;
     padding: 0;
+    line-height: 200%;
 }
 .lnb a {
     display: block;
@@ -38,7 +51,7 @@ body {
     color: #333;
 }
 
-.lnb b {
+.lnb h3 {
     display: block;
     padding: 10px;
     text-decoration: none;
