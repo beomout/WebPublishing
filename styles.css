@@ -58,3 +58,132 @@ body {
     color: black;
 }
 
+table {
+    border-collapse: collapse;
+    border: 1px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+
+  td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  caption {
+    padding: 10px;
+  }
+
+/* 체크박스 테스트 */
+  .custom-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    color: #333;
+  }
+
+  /* 기본 체크박스 숨기기 */
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* 체크박스 외형 */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: 0.2s;
+  }
+
+  /* 체크됐을 때 효과 */
+  .custom-checkbox input:checked ~ .checkmark {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+
+  /* 체크 표시 그리기 */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .custom-checkbox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  /* 호버 효과 */
+  .custom-checkbox:hover input ~ .checkmark {
+    border-color: #888;
+  }
+
+/* 콤보 드롭다운 */
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    font-family: inherit;
+  }
+
+  .custom-select select {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    appearance: none; /* 기본 화살표 제거 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .custom-select select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  }
+
+  /* 커스텀 화살표 추가 */
+  .custom-select::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+    font-size: 12px;
+  }
+
+  .custom-select select:hover {
+    border-color: #888;
+  }
